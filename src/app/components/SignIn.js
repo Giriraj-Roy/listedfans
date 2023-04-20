@@ -72,9 +72,14 @@ const SignIn = () => {
                 <div className='my-2 bg-inherit rounded-xl'>Password</div>
                 <input type='password'></input>
                 <div className='my-2 bg-inherit rounded-xl text-[#346BD4]'>Forgot password?</div>
-                <Link href='/dashboard'>
-                    <div className='my-2 py-2 bg-black text-white font-[800] text-center rounded-xl'>Sign In</div>
-                </Link>
+                {/* <Link href='/dashboard'> */}
+                    <div
+                        className='my-2 py-2 bg-black text-white font-[800] text-center rounded-xl'
+                        // onClick={()=>signIn()}
+                    >
+                        Sign In
+                    </div>
+                {/* </Link> */}
             </div>
             <div className='text-center'>
                 Don’t have an account?

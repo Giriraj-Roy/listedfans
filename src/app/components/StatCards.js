@@ -18,12 +18,12 @@ const StatCards = ({title, stats, icon}) => {
   }
 
   return (
-    <div className={colour}>
-      <Image className='bg-inherit h-fit' src={icon} alt={title}/>
-      <div className='bg-transparent w-[10vw]'>
-        {title}
+    <div className={`mx-[1%] w-[20%] h-[14vh] p-4 relative rounded-2xl ${colour}`}>
+      <Image className='absolute top-4 right-4 bg-inherit h-fit' src={icon} alt={title}/>
+      <div className='absolute bottom-2 w-fit max-w-[100%] bg-transparent'>
+        <span className='bg-inherit font-Lato text-sm font-[400]'>{title}</span>
         <br/>
-        {stats}
+        <span className='bg-inherit text-2xl font-Sans font-[800]'>{stats}</span>
       </div>     
     </div>
   )

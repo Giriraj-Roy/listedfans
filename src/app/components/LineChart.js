@@ -17,7 +17,7 @@ export default function LineChart() {
             label: new Date().getFullYear(),
             backgroundColor: "#E9A0A0",
             borderColor: "#E9A0A0",
-            data: [65, 78, 66, 44],
+            data: [420, 150, 460, 190],
             fill: false,
           },
           {
@@ -25,7 +25,7 @@ export default function LineChart() {
             fill: false,
             backgroundColor: "#9BDD7C",
             borderColor: "#9BDD7C",
-            data: [40, 68, 86, 74],
+            data: [390, 200, 300, 210],
           },
         ],
       },
@@ -35,13 +35,13 @@ export default function LineChart() {
         title: {
           display: false,
           text: "Sales Charts",
-          fontColor: "white",
+          fontColor: "#858585",
         },
         legend: {
           labels: {
-            fontColor: "white",
+            fontColor: "#858585",
           },
-          align: "end",
+          align: "top",
           position: "bottom",
         },
         tooltips: {
@@ -62,7 +62,7 @@ export default function LineChart() {
               scaleLabel: {
                 display: false,
                 labelString: "Week",
-                fontColor: "white",
+                fontColor: "#858585",
               },
               gridLines: {
                 display: false,
@@ -84,7 +84,7 @@ export default function LineChart() {
               scaleLabel: {
                 display: false,
                 labelString: "Value",
-                fontColor: "white",
+                fontColor: "#858585",
               },
               gridLines: {
                 borderDash: [3],
@@ -105,7 +105,7 @@ export default function LineChart() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-blueGray-700">
+      <div className="m-auto my-4 relative flex flex-col min-w-0 break-words w-[90%] shadow-lg rounded bg-blueGray-700">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
@@ -123,7 +123,7 @@ export default function LineChart() {
         </div>
         <div className="p-4 flex-auto">
           {/* Chart */}
-          <div className="relative h-350-px">
+          <div className="relative h-[w]">
             <canvas id="line-chart"></canvas>
           </div>
         </div>
