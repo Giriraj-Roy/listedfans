@@ -12,7 +12,7 @@ import CardChart from './CardChart'
 
 const DashMain = () => {
   return (
-    <div className='ml-[1vw] my-[5vh] w-[80vw] block'>
+    <div className='ml-[1vw] mt-[5vh] w-[80vw] block'>
       <DashHead/>
       <div className='bg-transparent flex justify-around w-[90%]'>
         <StatCards title="Total Revenues"     stats="$2,129,430"  icon={icon1} />
