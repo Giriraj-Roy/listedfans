@@ -14,14 +14,14 @@ export default function LineChart() {
         ],
         datasets: [
           {
-            label: new Date().getFullYear(),
+            label: "Guest",
             backgroundColor: "#E9A0A0",
             borderColor: "#E9A0A0",
-            data: [420, 150, 460, 190],
+            data: [320, 150, 360, 190],
             fill: false,
           },
           {
-            label: new Date().getFullYear() - 1,
+            label: "User",
             fill: false,
             backgroundColor: "#9BDD7C",
             borderColor: "#9BDD7C",
@@ -30,7 +30,8 @@ export default function LineChart() {
         ],
       },
       options: {
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
+        aspectRatio: 6/1,
         responsive: true,
         title: {
           display: false,
@@ -41,8 +42,11 @@ export default function LineChart() {
           labels: {
             fontColor: "#858585",
           },
-          align: "top",
-          position: "bottom",
+          align: "end",
+          position: "top",
+          maxWidth: "1vw",
+          maxHeight: "1vw",
+          borderRadius: "50%",
         },
         tooltips: {
           mode: "index",
@@ -56,13 +60,13 @@ export default function LineChart() {
           xAxes: [
             {
               ticks: {
-                fontColor: "rgba(255,255,255,.7)",
+                fontColor: "#858585",
               },
               display: true,
               scaleLabel: {
                 display: false,
                 labelString: "Week",
-                fontColor: "#858585",
+                fontColor: "black",
               },
               gridLines: {
                 display: false,
@@ -78,7 +82,7 @@ export default function LineChart() {
           yAxes: [
             {
               ticks: {
-                fontColor: "rgba(255,255,255,.7)",
+                fontColor: "#858585",
               },
               display: true,
               scaleLabel: {
@@ -89,7 +93,7 @@ export default function LineChart() {
               gridLines: {
                 borderDash: [3],
                 borderDashOffset: [3],
-                drawBorder: false,
+                drawBorder: true,
                 color: "rgba(255, 255, 255, 0.15)",
                 zeroLineColor: "rgba(33, 37, 41, 0)",
                 zeroLineBorderDash: [2],
@@ -105,26 +109,26 @@ export default function LineChart() {
   }, []);
   return (
     <>
-      <div className="m-auto my-4 relative flex flex-col min-w-0 break-words w-[90%] shadow-lg rounded bg-blueGray-700">
+      <div className="ml-[2vw] my-4 px-4 relative flex flex-col min-w-0 break-words w-[85%] rounded-3xl bg-white">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
-          <div className="flex flex-wrap items-center">
-            <div className="relative w-full max-w-full flex-grow flex-1">
-              <h6 className="uppercase text-blueGray-100 mb-1 text-xs font-semibold">
+          <div className="flex flex-wrap items-center bg-transparent">
+            <div className="relative w-full max-w-full flex-grow flex-1 bg-transparent">
+              <h6 className="bg-transparent uppercasetext-black text-blueGray-100 mb-1 text-xl font-semibold">
                 Activities
               </h6>
-              <h2 className="flex text-white text-xl font-semibold">
+              <h2 className="bg-transparent flex text-[#858585] text-base font-[500]">
                 May - June 2021
-                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="my-auto h-fit bg-transparent" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.218599 0.255719C0.5193 -0.0722496 0.937938 -0.097987 1.30554 0.255719L4.00082 3.0111L6.69609 0.255719C7.0637 -0.097987 7.48302 -0.0722496 7.78166 0.255719C8.08236 0.582952 8.06305 1.13594 7.78166 1.44332C7.50164 1.7507 4.5436 4.75389 4.5436 4.75389C4.47316 4.83173 4.38873 4.89364 4.29536 4.93592C4.20198 4.97821 4.10157 5 4.00013 5C3.89868 5 3.79827 4.97821 3.7049 4.93592C3.61152 4.89364 3.5271 4.83173 3.45666 4.75389C3.45666 4.75389 0.499989 1.7507 0.218599 1.44332C-0.0634812 1.13594 -0.0821026 0.582952 0.218599 0.255719Z" fill="#858585"/>
                 </svg>
               </h2>
             </div>
           </div>
         </div>
-        <div className="p-4 flex-auto">
+        <div className=" bg-transparent p-4 flex-auto">
           {/* Chart */}
-          <div className="relative h-[w]">
-            <canvas id="line-chart"></canvas>
+          <div className="bg-transparent relative h-[w]">
+            <canvas className="bg-transparent" id="line-chart"></canvas>
           </div>
         </div>
       </div>

@@ -25,6 +25,13 @@ const PieChart = () =>{
                 }]
             },
             options: {
+                legend: {
+                    labels: {
+                      fontColor: "#858585",
+                    },
+                    align: "right",
+                    position: "bottom",
+                },
                 scales: {
                     xAxes: [{
                         display: false,
@@ -39,7 +46,7 @@ const PieChart = () =>{
     return (
         <div className="">
             {/* Pie chart */}
-            <h1 className="mt-10 text-xl font-semibold capitalize ">Pie Chart</h1>
+            <h1 className="mt-10 text-xl font-semibold capitalize ">Top Products</h1>
             <div className="w-[30vw] h-[30vh] flex">
                 <div className='py-2 rounded-xl  w-full h-fit my-auto'>
                     <canvas id='myChart'></canvas>
