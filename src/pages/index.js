@@ -64,10 +64,10 @@ export default function Component() {
                 </div>
                 <div className='my-4 p-4 bg-white rounded-2xl 
                                 font-Lato text-base'>
-                    <div className='my-2 bg-inherit rounded-xl'>Email address</div>
-                    <input type='email'></input>
-                    <div className='my-2 bg-inherit rounded-xl'>Password</div>
-                    <input type='password'></input>
+                    <div className='my-2 bg-inherit rounded-xl font-[500]'>Email address</div>
+                    <input className="w-full h-[5vh] px-6 py-2 rounded-xl bg-[#EAEAEA] outline-none" type='email'></input>
+                    <div className='my-2 bg-inherit rounded-xl font-[500]'>Password</div>
+                    <input className="w-full h-[5vh] px-6 py-2 rounded-xl bg-[#EAEAEA] outline-none" type='password'></input>
                     <div className='my-2 bg-inherit rounded-xl text-[#346BD4]'>Forgot password?</div>
                     {/* <Link href='/dashboard'> */}
                         <div
