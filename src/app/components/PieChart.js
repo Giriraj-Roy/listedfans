@@ -28,6 +28,7 @@ const PieChart = () =>{
                 legend: {
                     labels: {
                       fontColor: "#858585",
+                      usePointStyle: true,
                     },
                     align: "right",
                     position: "right",

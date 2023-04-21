@@ -41,6 +41,7 @@ export default function LineChart() {
         legend: {
           labels: {
             fontColor: "#858585",
+            usePointStyle: true,
           },
           align: "end",
           position: "top",
