@@ -3,12 +3,12 @@ import React from 'react'
 const DashHead = () => {
   return (
     <div className='mb-[5vh] flex w-[90%]'>
-        <div className='ml-[2vw] text-[1.5rem] font-[700]'>
+        <div className='ml-[2vw] text-[1.5rem] font-Montserrat font-[700]'>
             Dashboard
         </div>
         <div className='flex justify-end w-[80%] bg-inherit'>
           <div className='mx-4 bg-[#FFFFFF] flex rounded-xl'>
-            <input className='mx-[1vw] bg-[#FFFFFF] outline-none'  type="text" placeholder="Search..."/>
+            <input className='mx-[1vw] bg-[#FFFFFF] font-Lato outline-none'  type="text" placeholder="Search..."/>
             <svg className='bg-transparent m-auto mr-2' width="1.5vw" height="1.5vw" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="4.5" stroke="#858585"/>
             <line x1="8.35355" y1="7.64645" x2="12.3536" y2="11.6464" stroke="#858585"/>

@@ -33,6 +33,10 @@
   font-family: "Lato";
   src: url("https://fonts.googleapis.com/css?family=Lato");
 }
+@font-face {
+  font-family: "OpenSans";
+  src: url("https://fonts.googleapis.com/css?family=Open Sans");
+}
 *{
   font-family: "Montserrat";
   background: #F5F5F5;

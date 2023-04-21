@@ -21,9 +21,9 @@ const StatCards = ({title, stats, icon}) => {
     <div className={`mx-[1%] w-[20%] h-[14vh] p-4 relative rounded-2xl ${colour}`}>
       <Image className='absolute top-4 right-4 bg-inherit h-fit' src={icon} alt={title}/>
       <div className='absolute bottom-2 w-fit max-w-[100%] bg-transparent'>
-        <span className='bg-inherit font-Lato text-xs font-[600]'>{title}</span>
+        <span className='bg-inherit font-Lato text-xs font-[500]'>{title}</span>
         <br/>
-        <span className='bg-inherit text-2xl font-Sans font-[800]'>{stats}</span>
+        <span className='bg-inherit text-xl font-OpenSans font-[600]'>{stats}</span>
       </div>     
     </div>
   )

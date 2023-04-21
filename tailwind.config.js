@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
         Lato: ['Lato', 'sans-serif'],
+        OpenSans: ['OpenSans', 'sans-serif'],
       },
     },
   },
