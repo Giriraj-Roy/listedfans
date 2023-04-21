@@ -29,10 +29,10 @@ export default function Component() {
                 {/* </div> */}
             </div>
             <div className='m-auto'>
-                <div className='my-2 text-4xl font-Montserrat font-bold'>
+                <div className='my-2 text-3xl font-Montserrat font-bold'>
                     Sign In
                 </div>
-                <div className='my-2 font-Lato'>
+                <div className='my-2 text-sm font-Lato'>
                     Sign in to your account
                 </div>
                 <div className='my-4 flex'>
@@ -52,33 +52,33 @@ export default function Component() {
                         </defs>
                         </svg>
 
-                        <span onClick={()=>signIn()} className='m-auto  font-Montserrat bg-inherit cursor-pointer'>Sign in with Google</span>
+                        <span onClick={()=>signIn()} className='m-auto  text-sm  font-Montserrat bg-inherit cursor-pointer'>Sign in with Google</span>
                     </div>
                     <div className='py-1 px-4 flex bg-white rounded-xl 
                                     text-[#858585] font-[400] text-base '>
                         <svg className='m-auto mr-2' width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.34516 1.21952C7.27201 0.00716167 8.56055 0.00125122 8.56055 0.00125122C8.56055 0.00125122 8.75222 1.14107 7.83144 2.23908C6.84828 3.41151 5.73078 3.21966 5.73078 3.21966C5.73078 3.21966 5.52094 2.29759 6.34516 1.21952ZM5.84866 4.0181C6.32548 4.0181 7.21043 3.36763 8.36232 3.36763C10.3451 3.36763 11.1251 4.76781 11.1251 4.76781C11.1251 4.76781 9.59954 5.54189 9.59954 7.42017C9.59954 9.53904 11.5 10.2693 11.5 10.2693C11.5 10.2693 10.1715 13.9801 8.37708 13.9801C7.55292 13.9801 6.91217 13.4289 6.04378 13.4289C5.15883 13.4289 4.28065 14.0007 3.70868 14.0007C2.0701 14.0007 0 10.4806 0 7.65098C0 4.86704 1.7522 3.40664 3.39569 3.40664C4.46411 3.40664 5.29321 4.0181 5.84866 4.0181Z" fill="#999999"/>
                         </svg>
-                        <span className='m-auto  font-Montserrat bg-inherit  cursor-pointer'>Sign in with Apple</span>
+                        <span className='m-auto text-sm font-Montserrat bg-inherit  cursor-pointer'>Sign in with Apple</span>
                     </div>
                 </div>
                 <div className='my-4 p-4 bg-white rounded-2xl 
                                 font-Lato text-base'>
-                    <div className='my-2 bg-inherit rounded-xl font-Lato font-[500]'>Email address</div>
+                    <div className='my-2 bg-inherit text-sm rounded-xl font-Lato font-[500]'>Email address</div>
                     <input className="w-full h-[5vh] px-6 py-2 rounded-xl bg-[#EAEAEA] outline-none" type='email'></input>
-                    <div className='my-2 bg-inherit rounded-xl font-Lato font-[500]'>Password</div>
+                    <div className='my-2 bg-inherit text-sm rounded-xl font-Lato font-[500]'>Password</div>
                     <input className="w-full h-[5vh] px-6 py-2 rounded-xl bg-[#EAEAEA] outline-none" type='password'></input>
-                    <div className='my-2 bg-inherit rounded-xl font-Lato text-[#346BD4]'>Forgot password?</div>
+                    <div className='my-2 bg-inherit text-sm rounded-xl font-Lato text-[#346BD4]'>Forgot password?</div>
                     {/* <Link href='/dashboard'> */}
                         <div
-                            className='my-2 py-2 bg-black text-white font-Montserrat font-[800] text-center rounded-xl  cursor-pointer'
+                            className='my-2 py-2 bg-black text-white font-Montserrat font-[700] text-center rounded-xl  cursor-pointer'
                             onClick={()=>signIn()}
                         >
                             Sign In
                         </div>
                     {/* </Link> */}
                 </div>
-                <div className='text-center font-Lato'>
+                <div className='text-center text-sm font-Lato'>
                     Don’t have an account?
                     <span className='mx-1 my-2 bg-inherit rounded-xl font-Lato text-[#346BD4]'>Register here</span>
                 </div>
